@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/site"/>
+    <qresource prefix="/">
+        <file>FC resources/photo_2022-05-19_16-07-02.jpg</file>
+        <file>FC resources/photo_2022-05-20_16-59-26.jpg</file>
+        <file>FC resources/photo_2022-05-20_17-01-36.jpg</file>
+        <file>FC resources/photo_2022-05-20_17-03-01.jpg</file>
+        <file>FC resources/photo_2022-05-20_17-04-50.jpg</file>
+        <file>FC resources/photo_2022-05-20_17-31-17.jpg</file>
+        <file>FC resources/photo_2022-05-20_17-31-20.jpg</file>
+        <file>FC resources/photo_2022-05-20_17-32-52.jpg</file>
+        <file>FC resources/photo_2022-05-20_17-44-52.jpg</file>
+        <file>FC resources/photo_2022-05-21_12-39-40.jpg</file>
+        <file>FC resources/photo_2022-05-22_14-06-27.jpg</file>
+        <file>FC resources/photo_2022-05-22_17-44-09.jpg</file>
+        <file>FC resources/photo_2022-05-23_13-26-22.jpg</file>
+        <file>FC resources/photo_2022-05-24_09-04-06.jpg</file>
+        <file>FC resources/photo_2022-05-24_09-58-06.jpg</file>
+    </qresource>
+</RCC>

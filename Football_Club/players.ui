@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Players</class>
+ <widget class="QMainWindow" name="Players">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+background-color: rgb(85, 255, 0);
+border-radius: 10px;
+	border-color: rgb(255, 255, 0);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>681</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget {
+background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);
+border-radius: 8px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>5</y>
+      <width>350</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+background-color: rgb(170, 255, 255);
+	border-color: rgb(0, 0, 127);
+	color: rgb(255, 0, 127);
+border-radius: 12px;
+}</string>
+    </property>
+    <property name="text">
+     <string>          Список гравців</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>260</y>
+      <width>300</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans MT</family>
+      <pointsize>19</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+border-radius: 8px;
+	color: rgb(0, 255, 255);
+	background-color: rgb(255, 170, 0);
+	border-color: rgb(85, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>              Фільтри</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>410</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Californian FB</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(255, 0, 0);
+	color: rgb(255, 255, 0);
+	border-color: rgb(255, 255, 0);
+border-radius: 12px;
+padding: 5px 10px;
+}
+QPushButton:hover:!pressed { 
+background-color: white;
+border-color: black;
+color: black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>421</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>Perpetua Titling MT</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+background-color: rgb(255, 255, 0);
+	color: rgb(255, 0, 0);
+	border-color: rgb(255, 0, 0);
+border-radius: 6px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Позиція</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>Perpetua Titling MT</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+background-color: rgb(255, 255, 0);
+	color: rgb(255, 0, 0);
+	border-color: rgb(255, 0, 0);
+border-radius: 6px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Вік</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>Perpetua Titling MT</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+background-color: rgb(255, 255, 0);
+	color: rgb(255, 0, 0);
+	border-color: rgb(255, 0, 0);
+border-radius: 6px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Трансферна вартість</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>341</y>
+      <width>421</width>
+      <height>114</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QCheckBox" name="forward_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Нападаючий</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="mdf_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Півзахисник</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="def_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Захисник</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="gk_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Воротар</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="minus30_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>До 30 років</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="plus30_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>30 років і старше</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="minus25_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>До 25 млн.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="plus25_box">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox {
+background-color: rgb(255, 170, 255);
+	color: rgb(170, 0, 0);
+	border-color: rgb(170, 0, 0);
+border-radius: 5px;
+padding: 5px 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>25 млн. і більше</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>300</y>
+      <width>141</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QPushButton" name="filtr_button">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+border-radius: 8px;
+	color: rgb(0, 255, 255);
+	background-color: rgb(255, 170, 0);
+	border-color: rgb(85, 255, 255);
+padding: 10px 20px;
+}
+QPushButton:hover:!pressed { 
+background-color: white;
+border-color: black;
+color: black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Фільтрувати</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clear">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+border-radius: 8px;
+	color: rgb(0, 255, 255);
+	background-color: rgb(255, 170, 0);
+	border-color: rgb(85, 255, 255);
+padding: 10px 20px;
+}
+QPushButton:hover:!pressed { 
+background-color: white;
+border-color: black;
+color: black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Очистити</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="info_button">
+       <property name="font">
+        <font>
+         <family>Georgia</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+background-color: rgb(170, 255, 255);
+	border-color: rgb(0, 0, 127);
+	color: rgb(255, 0, 127);
+border-radius: 12px;
+padding: 10px 20px;
+}
+QPushButton:hover:!pressed { 
+background-color: white;
+border-color: black;
+color: black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Інформація</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="site_button">
+       <property name="font">
+        <font>
+         <family>Georgia</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+background-color: rgb(170, 255, 255);
+	border-color: rgb(0, 0, 127);
+	color: rgb(255, 0, 127);
+border-radius: 12px;
+padding: 10px 20px;
+}
+QPushButton:hover:!pressed { 
+background-color: white;
+border-color: black;
+color: black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Сайт</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
